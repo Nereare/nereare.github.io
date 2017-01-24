@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Wiccan Ascendancy"
-date:   2016-09-29 12:00:00 -0300
+date:   2016-10-11 12:00:00 -0300
 categories: blog personal
 ---
 
