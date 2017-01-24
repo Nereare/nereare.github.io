@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/nereare
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nereare.github.io
+  * I am nereare (https://keybase.io/nereare) on keybase.
+  * I have a public key with fingerprint 6367 132A 7C0E 2E96 06C3  EA7E DFA3 AD8D 0C49 A515
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ff81bd3420dd9ef0997bb63ba0f3a471ecce84ca9af1618a042333ca6a5f0a640a",
+            "fingerprint": "6367132a7c0e2e9606c3ea7edfa3ad8d0c49a515",
+            "host": "keybase.io",
+            "key_id": "dfa3ad8d0c49a515",
+            "kid": "0101ff81bd3420dd9ef0997bb63ba0f3a471ecce84ca9af1618a042333ca6a5f0a640a",
+            "uid": "7234c52b12afa2f108244ef7dbdf8519",
+            "username": "nereare"
+        },
+        "service": {
+            "hostname": "nereare.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1482118175,
+    "expire_in": 157680000,
+    "prev": "e1ca6df530057c863ffd442d4f3358ed60c3614fcda49759a38d954e1507e87d",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.61
+Comment: https://keybase.io/crypto
+
+yMIpAnicrVJZSFVBGL6mlZktRi89RHgqrFCZOTNnu1DQXkQJLRRiXOecmbn3aPfc
+27nn3jYq6yFaaKV9QQ1ayDKKhCDCNBNMjTJaILDFpI2KMFp8qTlWD0GPzcsw/3zf
+93/fz980JD2QlVZRgWc747tuprU2HE8Gli1dPGadZMboGim4TipnfRdbQVnCC5Xb
+VApKAALIuQ5NirAMKDUYB4ahmaaKTAI4IliDzLKYji1iEA5VqBOAZYSQRVSicEBU
+DIiUL3HbCTM37tqOJ2RVpGoQyUSzAJOZoQLVQoxojHKCCNUpsLBBFKgIYiSW8BnC
+nEkSrNCOiZp4hPrs/QP/n30n++Q0GWFLkU0oE05kDoEuY8y4Rk3KdQUaPjDBXIdE
+mUA7zGXEZdL6fEkUU7bF/Ln6Qf4GFIZtL5I0f2WKuzEvZsVWiO+I58UTQZ/urYn7
++FXMDP1WCpm2Q8UsBSPF3IQdc6QgFEjLs31piHUZQh1qSr7EVsdtl4VsH6Foqg7E
+8fuwlJBkUASlXEEAKJqlq4hzirFMMUdI0RlVgYVUiLlFCTY0xSBIp4aCGVSAxnSN
+Sn62lU5MaMvCJwkLzYQddoiX9JM33ijJCKRlBQb07+cvWSBr0PA/qzfzXGZgz/Se
+U02NY98Ou561csl2UvtuVPHz/jmFEdTZNqK98HR768f3alXN6Izqg9+OdWT31G6v
+z3lWXVYyJO/ixNIZbd1fH7+wsy9NbS6pCGzIfkImfaysub12f/TwvdxxpdFH61Ph
+zPT8Z5WzrtxtodP4697OvcRse7d/QXfu4aGpN8GGRT8Wft2h1h29M3DT0eS44oa9
+7/cVdDUd6JjwKc8dX1Z1a2JH9NX8lyOn1D75vmpO/Yl9J7vdsyeLqjc/xM0Zk8GZ
+0tCR+XW5LRsrzS8Hvu0e8/mpNvdCQX3Rogf3l4OuM7s6Gntbemcnoy8bribnbdv6
+Ob6l5/K8nKoFgzM7D10r2nx+54e8Ez8BFFxLdw==
+=C6DR
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nereare
+
+==================================================================
