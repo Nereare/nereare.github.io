@@ -3,6 +3,7 @@ layout: post
 title:  "urite: Development Branch"
 date:   2017-01-24 15:35:00 -0200
 categories: urite programming
+comments: true
 ---
 
 Since I've started coding [urite](https://github.com/Nereare/urite), I've being doing it mostly locally. It's not that big a project and, also, **I** am not that expert a programmer, so I chose to have the first wave of struggles by my self and post some code once at least the app's interface was done.
