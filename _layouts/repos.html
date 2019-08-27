@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <main class="container">
+      <div class="about">
+        <h2>{{ page.title | default: 'Repository List' }}</h2>
+      </div>
+
+      {{ content }}
+
+      <!-- Non-Forked, Non-Archived Repositories -->
+      <div class="repositories">
+        {% assign repo_count = site.github.public_repositories | join: '' %}
+        {% if repo_count != '' %}
+          {% for repo in site.github.public_repositories %}
+            {% if repo.fork == false and repo.archived == false %}
+            {% capture pass %}{% cycle 'repos': 'open', 'close' %}{% endcapture %}
+            {% if pass == 'open' %}
+        <div class="row">
+            {% endif %}
+          <div class="repository six columns">
+            <h3><a href="{{ repo.html_url }}"><i class="mdi mdi-git"></i>{{ repo.name }}</a></h3>
+            <p>
+              {{ repo.description }}
+              {% if repo.homepage %}
+              <a href="{{ repo.homepage }}">Site</a>
+              {% endif %}
+            </p>
+          </div>
+            {% if pass == 'close' or forloop.last %}
+        </div>
+            {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+        <div class="row">
+          <div class="twelve columns">
+            {{ "No repositories to show :sad:" | markdownify }}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Forked Repositories -->
+      <h3>Forked</h3>
+      <div class="repositories">
+        {% assign repo_count = site.github.public_repositories | join: '' %}
+        {% if repo_count != '' %}
+          {% for repo in site.github.public_repositories %}
+            {% if repo.fork == true and repo.archived == false %}
+            {% capture pass %}{% cycle 'repos': 'open', 'close' %}{% endcapture %}
+            {% if pass == 'open' %}
+        <div class="row">
+            {% endif %}
+          <div class="repository six columns">
+            <h3><a href="{{ repo.html_url }}"><i class="mdi mdi-source-fork"></i>{{ repo.name }}</a></h3>
+            <p>
+              {{ repo.description }}
+              {% if repo.homepage %}
+              <a href="{{ repo.homepage }}">Site</a>
+              {% endif %}
+            </p>
+          </div>
+            {% if pass == 'close' or forloop.last %}
+        </div>
+            {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+        <div class="row">
+          <div class="twelve columns">
+            {{ "No repositories to show :sad:" | markdownify }}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Archived Repositories -->
+      <h3>Archived</h3>
+      <div class="repositories">
+        {% assign repo_count = site.github.public_repositories | join: '' %}
+        {% if repo_count != '' %}
+          {% for repo in site.github.public_repositories %}
+            {% if repo.archived == true %}
+            {% capture pass %}{% cycle 'repos': 'open', 'close' %}{% endcapture %}
+            {% if pass == 'open' %}
+        <div class="row">
+            {% endif %}
+          <div class="repository six columns">
+            <h3><a href="{{ repo.html_url }}"><i class="mdi mdi-archive"></i>{{ repo.name }}</a></h3>
+            <p>
+              {{ repo.description }}
+            </p>
+          </div>
+            {% if pass == 'close' or forloop.last %}
+        </div>
+            {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+        <div class="row">
+          <div class="twelve columns">
+            {{ "No repositories to show :sad:" | markdownify }}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>

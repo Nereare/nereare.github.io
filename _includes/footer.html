@@ -1,0 +1,29 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="four columns">
+        <p class="copyright">
+          Copyright &copy; {{ site.copyright.year }} {{ site.copyright.author }}
+          <br />
+          <span class="license">
+            {% if site.copyright.license.name %}
+            The contents of this site are under the {% if site.copyright.license.url %}
+            <a href="{{ site.copyright.license.url }}">{{ site.copyright.license.name }}</a>
+            {% else %}{{ site.copyright.license.name }}{% endif %}, unless where otherwise noted.
+            {% endif %}
+            <br />
+            <a href="https://github.com/Nereare/Hepta">Hepta Theme</a> &copy; 2017-2019
+            <a href="https://nereare.github.io/">Igor Padoim</a>, available under the
+            <a href="https://opensource.org/licenses/MIT">MIT License</a>.
+          </span>
+        </p>
+      </div>
+
+      <div class="eight columns">
+        <p class="social-media">
+          {% include social-links.html %}
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

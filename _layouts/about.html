@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <main class="container">
+      <div class="about">
+        <img class="gravatar" src="{{ site.user.gravatar | to_gravatar }}?s=150" />
+        <div>
+          <h2>{{ site.user.name }}</h2>
+          <p>
+            {{ site.user.blurb }}
+            {% if site.user.email %}
+            <br />
+            <a class="mdi mdi-email" href="mailto:{{ site.user.email }}">Email</a>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>

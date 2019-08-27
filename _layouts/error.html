@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <main class="container er404">
+      <img src="{{ "assets/LogoGlitch.png" | relative_url }}" alt="Heptagon with glithing effects" />
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <main class="container">
+      <div class="about">
+        <div>
+          <h2>{{ page.title | default: 'Post' }}</h2>
+          <p>{{ page.author | default: site.user.name }} &bull; {{ page.date | default: '2019-08-27' | date: '%A, %B %e, %Y' }}</p>
+        </div>
+      </div>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>

@@ -1,0 +1,38 @@
+<head{% if site.lang %} lang="{{ site.lang }}"{% endif %}>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Tags -->
+  {% seo %}
+
+  <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/favicon/apple-touch-icon.png' | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/favicon/favicon-32x32.png' | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/favicon/favicon-16x16.png' | absolute_url }}">
+  <link rel="manifest" href="{{ 'assets/favicon/site.webmanifest' | absolute_url }}">
+  <link rel="mask-icon" href="{{ 'assets/favicon/safari-pinned-tab.svg' | absolute_url }}" color="#26a69a">
+  <link rel="shortcut icon" href="{{ 'assets/favicon/favicon.ico' | absolute_url }}">
+  <meta name="msapplication-TileColor" content="#26a69a">
+  <meta name="msapplication-config" content="{{ 'assets/favicon/browserconfig.xml' | absolute_url }}">
+  <meta name="theme-color" content="#26a69a">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/getskeleton@2.0.4-2/lib/css/skeleton.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.2.95/css/materialdesignicons.css" />
+  <link rel="stylesheet" href="{{ 'css/style.css' | absolute_url }}" />
+
+  {% if site.google-analytics_code %}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', '{{ site.google-analytics_code }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+</head>

@@ -1,0 +1,112 @@
+# Site Settings
+title: Nereare's Page
+description: My home at GitHub
+keywords: ""
+lang: en_US
+timezone: America/Sao_Paulo
+
+# Copyright Settings
+# Note: the values of these variables are regarding the **content** of the site,
+# not the theme data.
+copyright:
+  author: Igor Padoim
+  year: 2019
+  license:
+    name: Creative Commons BY-SA 4.0
+    url: http://creativecommons.org/licenses/by-sa/4.0/
+
+# User Settings
+user:
+  name: Igor Padoim
+  blurb: Si man i yulma nin enquantuva?
+  email: igorpadoim@gmail.com
+  gravatar: igorpadoim@gmail.com
+social:
+  twitter: nereare
+  reddit: u/Nereare
+  github: Nereare
+  keybase: nereare
+  instagram: Nereare
+  #hackernews: hackernews
+  #disqus: disqus
+  #linkedin: linkedin
+  #facebook: facebook
+#google-analytics_code: UA-########-#
+
+collections:
+  # Menu List
+  menus:
+    output: true
+
+# Repositories Settings
+# List below up to *FOUR* repositories that you would like to star on your front page.
+star_repos:
+  - name: Hearth
+    url: https://github.com/calacirya/Hearth
+    desc: A simple writer with dynamic highlighting for Github-flavored markdown, made with Electron and :heart:.
+    site: https://calacirya.github.io/Hearth/
+  - name: Hepta
+    url: https://github.com/Nereare/Hepta
+    desc: A theme for Jekyll-based pages, created for my personal page.
+    site: https://nereare.github.io/Hepta/
+  - name: Grimoire
+    url: https://github.com/Nereare/Grimoire
+    desc: A jekyll quasi-wiki for RPG-oriented worldbuilding.
+  - name: DF Notes
+    url: https://github.com/Nereare/DF-Notes
+    desc: 'A series of notes and schematics for building my own forts at Dwarf Fortress. :mount_fuji:'
+    site: https://nereare.github.io/DF-Notes/
+
+###############################
+#        META SETTINGS        #
+#        -------------        #
+# The settings below here are #
+# required by the theme, for  #
+# it to work.                 #
+# Change them at your own     #
+# risks.                      #
+###############################
+
+# Theme Settings
+name: Hepta
+#baseurl: ""
+#url: ""
+permalink: /posts/:year/:month/:day/:title.html
+repository: Nereare/nereare.github.io
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-gravatar
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+# Relativize links in collections
+relative_links   :
+  enabled        : true
+  collections    : true
+sass:
+  style: compressed
+
+# Meta Settings
+exclude:
+  - .gitattributes
+  - .gitignore
+  - .travis.yml
+  - CHANGELOG.md
+  - CODE-OF-CONDUCT.md
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - keybase.txt
+  - LICENSE.md
+  - README.md

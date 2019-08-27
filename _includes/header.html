@@ -1,0 +1,20 @@
+<!-- Header Compartment -->
+<header class="default">
+  <div class="container">
+    <h1 class="four columns"><a href="{{ site.url }}">{{ site.title }}</a></h1>
+
+    <!-- Nav Bar -->
+    <nav class="eight columns">
+      <!-- Menu bar with four link capacity. -->
+      {% assign menu_count = site.menus | size %}
+      {% if menu_count > 0 %}
+      <ul>
+        {% for menu in site.menus %}
+        <li>
+          <a href="{{ menu.url | absolute_url }}">{% if menu.icon %}<i class="mdi mdi-{{ menu.icon }}"></i>{% endif %}{{ menu.title }}</a>
+        </li>
+        {% endfor %}
+      {% endif %}
+    </nav>
+  </div>
+</header>

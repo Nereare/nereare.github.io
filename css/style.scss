@@ -1,0 +1,203 @@
+---
+---
+
+/*
+ * SCSS SPECIFICS
+ * Variables and mixins used throughout this code.
+ * =============================================== */
+$White:   #ffffff;
+$Gray500: #9e9e9e;
+$Gray900: #212121;
+
+$link: #26A69A;
+$link-h: #009688;
+
+$social-iconsize: 3rem;
+$nav_height:      3rem;
+$width_lim:      550px;
+
+@mixin social-media-icons($size) {
+  padding: 1.5rem;
+  font-size: $size;
+  width: $size;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 0;
+  border-radius: 50%;
+}
+
+/* GENERAL DEFINITIONS
+ * Definitions not covered in the Skeleton sheet.
+ * ============================================== */
+html {
+  border: 0;
+  padding: 0;
+}
+main {
+  p {
+    text-align: justify;
+    text-indent: 3rem;
+  }
+}
+a {
+  color: $link;
+  &:hover { color: $link-h; }
+}
+
+/* MAIN HEADER DEFINITIONS
+ * Definitions regarding the header of the Main layout.
+ * ==================================================== */
+header.index {
+  width: 100%;
+  min-height: 200px;
+  color: white;
+  margin-bottom: 8rem;
+
+  .title {
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    background: $Gray900 url("{{ "assets/Header.jpg" | relative_url }}") center/cover no-repeat;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+    h1 {
+      margin-top: 5%;
+    }
+  }
+
+  p { line-height: 350%; }
+  p.chev-down { margin-bottom: 4rem; }
+  .mdi {
+    @include social-media-icons($social-iconsize);
+    text-align: center;
+    color: $White;
+  }
+}
+
+/* MAIN NAV DEFINITIONS
+ * Definitions regarding the nav bar of the Main layout.
+ * ===================================================== */
+nav.index {
+  ul {
+    list-style-type: none;
+    font-size: 2.5rem;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin-right: 0.7rem;
+      a { text-decoration: none; }
+      i { margin-right: 0.5rem; }
+    }
+  }
+}
+
+/* DEFAULT HEADER DEFINITIONS
+ * Definitions regarding the default header, used in every layout except Main.
+ * =========================================================================== */
+header.default {
+  background: $Gray900;
+  color: $White;
+  margin-bottom: 4rem;
+
+  a { text-decoration: none; }
+  h1 {
+    font-size: $nav_height;
+    line-height: $nav_height;
+  }
+  h1, ul {
+    text-align: center;
+    @media (min-width: $width_lim) {
+      text-align: left;
+      position: relative;
+      transform: translateY(50%);
+      top: 50%;
+    }
+  }
+
+  nav {
+    margin-bottom: 1rem;
+
+    @media (min-width: $width_lim) { margin-bottom: 0; }
+    li {
+      margin: 1rem 0;
+      list-style: none;
+      line-height: $nav_height;
+      vertical-align: middle;
+
+      i { margin-right: 0.5rem; }
+
+      @media (min-width: $width_lim) {
+        display: inline-block;
+        margin: 0 1rem;
+        &:first-of-type { margin-left: 0; }
+      }
+    }
+  }
+}
+
+/* MAIN DEFINITIONS
+ * Definitions regarting the all layouts and also specific ones.
+ * ============================================================= */
+main {
+  &.er404 {
+    h1, p { text-align: center; }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 25rem;
+    }
+  }
+  .about {
+    overflow: auto;
+    margin-bottom: 3rem;
+    img, div { float: left; }
+    img {
+      clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+/* REPOSITORY DEFINITIONS
+ * Definitions regarting the Repository collection divs.
+ * ===================================================== */
+.repository h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+
+  i { margin-right: 0.5rem; }
+  a { text-decoration: none; }
+}
+
+/* MAIN POSTS DEFINITIONS
+ * Definitions regarding the Post listing on the Main layout.
+ * ========================================================== */
+.post {
+  p { margin-bottom: 0.5rem; }
+  .date, .read-more { text-indent: 0; }
+  .date { font-size: 1rem; }
+  .read-more { text-align: center; }
+}
+
+/* FOOTER DEFINITIONS
+ * Definitions regarding the footer.
+ * ================================= */
+footer {
+  background: $Gray900;
+  color: $White;
+  padding-top: 2rem;
+  margin-top: 2rem;
+
+  .copyright {
+    color: $Gray500;
+    text-align: justify;
+
+    .license { font-size: 1rem; }
+  }
+  .social-media {
+    text-align: center;
+    a { @include social-media-icons($social-iconsize); }
+  }
+}
