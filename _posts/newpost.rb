@@ -31,17 +31,11 @@ title = gets.chomp
 puts '3. And are there any categories?'
 categ = gets.chomp
 
-puts '4. Lastly, will comments be alowed? (Y/n)'
-if ( gets.to_s.chomp == 'n' )
-  comm = 'false'
-end
-
 file = %Q{---
 layout: post
 title:  "{{title}}"
 date:   {{date}}
 categories: {{categ}}
-comments: {{comm}}
 ---
 
 # CONTENTS HERE}
