@@ -110,3 +110,5 @@ exclude:
   - keybase.txt
   - LICENSE.md
   - README.md
+include:
+  - keybase.txt
