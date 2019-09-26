@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 3.8.6'
-gem 'html-proofer'
+gem 'html-proofer', '~> 3.13.0'
 gem 'nokogiri', '>= 1.10.4'
 
 group :jekyll_plugins do
