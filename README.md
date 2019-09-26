@@ -1,9 +1,10 @@
 # Nereare Page
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/Nereare/nereare.github.io)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue)](https://github.com/Nereare/nereare.github.io)
 [![License](https://img.shields.io/github/license/Nereare/nereare.github.io.svg)](https://github.com/Nereare/nereare.github.io)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE-OF-CONDUCT.md)
 [![Travis (.org)](https://img.shields.io/travis/Nereare/nereare.github.io)](https://travis-ci.org/Nereare/nereare.github.io)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Nereare/nereare.github.io)](https://libraries.io/github/Nereare/nereare.github.io)
 
 My personal User page - an obvious work-in-progress. :wink:
 
