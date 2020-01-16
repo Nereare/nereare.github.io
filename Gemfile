@@ -6,7 +6,7 @@ gem 'nokogiri', '>= 1.10.4'
 
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.12.1'
-  gem 'jekyll-github-metadata', '~> 2.12.0'
+  gem 'jekyll-github-metadata', '~> 2.13.0'
   gem 'jekyll-gravatar', '~> 0.1.0'
   gem 'jekyll-redirect-from', '~> 0.15.0'
   gem 'jekyll-relative-links', '~> 0.6.1'
